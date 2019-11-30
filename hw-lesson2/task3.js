@@ -1,6 +1,7 @@
-do {
-    var result = parseInt(prompt('Please enter any number 0..100', '0'));
-} while (result.length == 0 || isNaN(result) || result > 100 || result < 0);
+let result = parseInt(prompt('Please enter any number', '0'));
+while (result.length == 0 || isNaN(result)) {
+    result = parseInt(prompt('Please enter any number', '0'));
+}
 
 switch (true) {
     case (result < 60):
@@ -17,5 +18,8 @@ switch (true) {
         break;
     case (result < 100):
         print('A');
+        break;
+    default:
+        print('Number is > 100');
         break;
 }
