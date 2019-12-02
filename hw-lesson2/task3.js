@@ -16,7 +16,7 @@ switch (true) {
     case (result < 90):
         print('B');
         break;
-    case (result < 100):
+    case (result <= 100):
         print('A');
         break;
     default:
