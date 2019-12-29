@@ -1,0 +1,17 @@
+{
+  "name": "testcafeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome:headless src/tests/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.7.0",
+    "faker": "4.1.0",
+    "request": "2.88.0",
+    "request-promise-native": "^1.0.8"
+  }
+}
